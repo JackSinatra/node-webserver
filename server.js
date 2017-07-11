@@ -44,7 +44,11 @@ app.get('/about',(req,res) => {
     pageTitle: 'About page render'
   })
 })
-
+app.get('/projects',(req,res) => {
+  res.render('projects.hbs',{
+    pageTitle: 'Projects'
+  })
+})
 
 app.get('/404', (request,response) => {
   response.send({
